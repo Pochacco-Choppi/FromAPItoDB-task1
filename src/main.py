@@ -36,7 +36,7 @@ def post_questions_to_db(qestion_count: int=1):
                 continue
 
     if fail_to_insert_count:
-        get_questions(fail_to_insert_count)
+        post_questions_to_db(fail_to_insert_count)
 
     return question_json
 
